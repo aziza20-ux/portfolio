@@ -1,0 +1,107 @@
+:root {
+  --bg-color: #0D0D0F;
+  --text-color: #F2F0EB;
+  --card-bg: #1A1A1F;
+  --section-bg: #111114;
+  --border-color: rgba(255, 255, 255, 0.06);
+  --accent-color: #7C3AED;
+  --accent-hover: #8B5CF6;
+  --accent-glow: rgba(124, 58, 237, 0.15);
+  --text-muted: rgba(242, 240, 235, 0.5);
+  --text-muted-darker: rgba(242, 240, 235, 0.35);
+  --input-bg: #0D0D0F;
+  --scrollbar-track: #0D0D0F;
+  --glass-shadow: rgba(0, 0, 0, 0.4);
+  --glass-bg: rgba(26, 26, 31, 0.5);
+  --glass-border: rgba(255, 255, 255, 0.06);
+  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.light-theme {
+  --bg-color: #F9FAFB;
+  --text-color: #111827;
+  --card-bg: #FFFFFF;
+  --section-bg: #F3F4F6;
+  --border-color: rgba(0, 0, 0, 0.08);
+  --accent-color: #6D28D9;
+  --accent-hover: #7C3AED;
+  --accent-glow: rgba(109, 40, 217, 0.08);
+  --text-muted: rgba(75, 85, 99, 0.85);
+  --text-muted-darker: rgba(107, 114, 128, 0.7);
+  --input-bg: #FFFFFF;
+  --scrollbar-track: #F3F4F6;
+  --glass-shadow: rgba(31, 41, 55, 0.04);
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(109, 40, 217, 0.1);
+  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+
+.featured-glow {
+  position: relative;
+}
+
+.featured-glow::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(135deg, var(--accent-color), transparent 60%);
+  border-radius: inherit;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 3px;
+}
+
+::selection {
+  background: var(--accent-glow);
+  color: var(--text-color);
+}
+
+/* Tooltip & Micro-animations */
+.hover-scale {
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hover-scale:hover {
+  transform: translateY(-4px);
+}
