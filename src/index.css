@@ -1,46 +1,108 @@
 :root {
   --bg-color: #0D0D0F;
   --text-color: #F2F0EB;
+  --text-secondary: rgba(242, 240, 235, 0.8);
+  --text-muted: rgba(242, 240, 235, 0.5);
+  --text-muted-darker: rgba(242, 240, 235, 0.35);
   --card-bg: #1A1A1F;
   --section-bg: #111114;
   --border-color: rgba(255, 255, 255, 0.06);
+  --border-subtle: rgba(255, 255, 255, 0.12);
   --accent-color: #7C3AED;
   --accent-hover: #8B5CF6;
   --accent-glow: rgba(124, 58, 237, 0.15);
-  --text-muted: rgba(242, 240, 235, 0.5);
-  --text-muted-darker: rgba(242, 240, 235, 0.35);
   --input-bg: #0D0D0F;
+  --input-border: rgba(255, 255, 255, 0.08);
+  --skill-track: rgba(255, 255, 255, 0.06);
+  --hero-overlay: rgba(13, 13, 15, 0.85);
   --scrollbar-track: #0D0D0F;
   --glass-shadow: rgba(0, 0, 0, 0.4);
   --glass-bg: rgba(26, 26, 31, 0.5);
   --glass-border: rgba(255, 255, 255, 0.06);
   --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --timeline-line: rgba(124, 58, 237, 0.2);
+  --footer-text: rgba(242, 240, 235, 0.4);
+  --footer-icon: rgba(242, 240, 235, 0.3);
+  --contact-hint: rgba(242, 240, 235, 0.35);
+  --hero-eyebrow: rgba(242, 240, 235, 0.6);
+  --hero-typewriter: rgba(242, 240, 235, 0.8);
+  --hero-bio: rgba(242, 240, 235, 0.5);
+  --hero-cv-border: rgba(255, 255, 255, 0.12);
+  --hero-cv-color: #F2F0EB;
+  --hero-social-border: rgba(255, 255, 255, 0.12);
+  --hero-social-color: rgba(242, 240, 235, 0.5);
+  --stats-bg: #1A1A1F;
+  --stats-border: rgba(255, 255, 255, 0.06);
+  --stats-label: rgba(242, 240, 235, 0.5);
+  --timeline-card-bg: #1A1A1F;
+  --timeline-card-border: rgba(255, 255, 255, 0.06);
+  --timeline-text: #F2F0EB;
+  --timeline-muted: rgba(242, 240, 235, 0.4);
+  --timeline-desc: rgba(242, 240, 235, 0.55);
+  --timeline-period: rgba(242, 240, 235, 0.4);
+  --contact-card-bg: #1A1A1F;
+  --contact-card-border: rgba(255, 255, 255, 0.06);
+  --contact-card-label: rgba(242, 240, 235, 0.4);
+  --contact-card-value: #F2F0EB;
+  --contact-form-bg: #1A1A1F;
+  --contact-form-border: rgba(255, 255, 255, 0.06);
 }
 
 .light-theme {
   --bg-color: #F9FAFB;
   --text-color: #111827;
+  --text-secondary: #374151;
+  --text-muted: #6B7280;
+  --text-muted-darker: #9CA3AF;
   --card-bg: #FFFFFF;
   --section-bg: #F3F4F6;
   --border-color: rgba(0, 0, 0, 0.08);
+  --border-subtle: rgba(0, 0, 0, 0.12);
   --accent-color: #6D28D9;
   --accent-hover: #7C3AED;
   --accent-glow: rgba(109, 40, 217, 0.08);
-  --text-muted: rgba(75, 85, 99, 0.85);
-  --text-muted-darker: rgba(107, 114, 128, 0.7);
   --input-bg: #FFFFFF;
+  --input-border: rgba(0, 0, 0, 0.12);
+  --skill-track: rgba(0, 0, 0, 0.06);
+  --hero-overlay: rgba(255, 255, 255, 0.9);
   --scrollbar-track: #F3F4F6;
   --glass-shadow: rgba(31, 41, 55, 0.04);
   --glass-bg: rgba(255, 255, 255, 0.75);
   --glass-border: rgba(109, 40, 217, 0.1);
   --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  --timeline-line: rgba(109, 40, 217, 0.15);
+  --footer-text: rgba(17, 24, 39, 0.5);
+  --footer-icon: rgba(17, 24, 39, 0.35);
+  --contact-hint: rgba(17, 24, 39, 0.4);
+  --hero-eyebrow: rgba(17, 24, 39, 0.55);
+  --hero-typewriter: rgba(17, 24, 39, 0.85);
+  --hero-bio: rgba(17, 24, 39, 0.6);
+  --hero-cv-border: rgba(0, 0, 0, 0.15);
+  --hero-cv-color: #111827;
+  --hero-social-border: rgba(0, 0, 0, 0.12);
+  --hero-social-color: rgba(17, 24, 39, 0.45);
+  --stats-bg: #FFFFFF;
+  --stats-border: rgba(0, 0, 0, 0.06);
+  --stats-label: #6B7280;
+  --timeline-card-bg: #FFFFFF;
+  --timeline-card-border: rgba(0, 0, 0, 0.07);
+  --timeline-text: #111827;
+  --timeline-muted: rgba(17, 24, 39, 0.45);
+  --timeline-desc: rgba(17, 24, 39, 0.6);
+  --timeline-period: rgba(17, 24, 39, 0.4);
+  --contact-card-bg: #FFFFFF;
+  --contact-card-border: rgba(0, 0, 0, 0.07);
+  --contact-card-label: rgba(17, 24, 39, 0.45);
+  --contact-card-value: #111827;
+  --contact-form-bg: #FFFFFF;
+  --contact-form-border: rgba(0, 0, 0, 0.07);
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  transition: background-color 0.25s ease, border-color 0.25s ease;
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
 }
 
 html {
