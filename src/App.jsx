@@ -46,7 +46,7 @@ const EXPERIENCES = [
   {
     role: 'Software Engineer Trainee',
     company: 'kLab Rwanda',
-    period: 'Apr 2026 – Present',
+    period: 'Apr 2026 – July 2026',
     location: 'Kigali, Rwanda',
     type: 'Trainee',
     desc: 'Develop and test software solutions for real-world applications. Collaborate with developers to build scalable and efficient systems. Work with technologies including Node.js, React.js, and Express.js. Participate in debugging, testing, and improving application performance.',
@@ -60,7 +60,16 @@ const EXPERIENCES = [
     desc: 'Developed responsive web applications using JavaScript and modern web technologies. Gained hands-on experience in real-world software development projects. Improved front-end functionality and user experience. Collaborated remotely with team members on development tasks.',
   },
   {
+    role: 'Teaching Assistant',
+    company: 'IEE – Inspire Educate and Empower Rwanda',
+    period: 'Jan 2024 – Jun 2024',
+    location: 'Rwanda',
+    type: 'Teaching',
+    desc: 'Taught Entrepreneurship to lower secondary school students. Supported learners in developing business thinking and problem-solving skills.',
+  },
+  {
     role: 'Microsoft Power Automate & SharePoint Specialist Intern',
+    company: 'M365Connect',
     company: 'M365Connect',
     period: 'Oct 2024 – Dec 2024',
     location: 'Remote',
