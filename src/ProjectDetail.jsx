@@ -103,7 +103,7 @@ export default function ProjectDetail() {
           background: 'var(--card-bg)',
         }}>
           {project.image ? (
-            <img src={project.image} alt={project.title} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            <img src={project.image} alt={project.title} style={{ width: '100%', height: '100%', objectFit: ['AbatCO CycleTrack PWA', 'Browse Kigali', 'Daylight Wellbeing App', 'Daylight Wellbeing — UI/UX Design'].includes(project.title) ? 'contain' : 'cover', display: 'block' }} />
           ) : (
             <div style={{
               width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center',

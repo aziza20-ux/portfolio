@@ -49,7 +49,7 @@ const EXPERIENCES = [
     period: 'Apr 2026 – July 2026',
     location: 'Kigali, Rwanda',
     type: 'Trainee',
-    desc: 'Develop and test software solutions for real-world applications. Collaborate with developers to build scalable and efficient systems. Work with technologies including Node.js, React.js, and Express.js. Participate in debugging, testing, and improving application performance.',
+    desc: 'Digitized Uburiza Solutions training delivery by developing an e-learning platform that moved its curriculum from physical training to online access. Developed course, module, lesson, enrollment, progress-tracking, and digital resource features using React.js, TypeScript, Node.js, and Express.js. Enabled learners to access training materials remotely and learn at their own pace. Collaborated with developers and stakeholders to design, test, debug, and improve scalable learning-system features.',
   },
   {
     role: 'Web Developer Intern',
@@ -57,7 +57,7 @@ const EXPERIENCES = [
     period: 'Jan 2026 – Apr 2026',
     location: 'Remote',
     type: 'Internship',
-    desc: 'Developed responsive web applications using JavaScript and modern web technologies. Gained hands-on experience in real-world software development projects. Improved front-end functionality and user experience. Collaborated remotely with team members on development tasks.',
+    desc: 'Developed and maintained client websites and web applications, delivering responsive and functional solutions aligned with client requirements. Improved existing web applications by implementing new features, resolving issues, and enhancing functionality and user experience. Contributed to multiple real-world software projects using JavaScript and modern web technologies. Collaborated remotely with team members to deliver development tasks and maintain the reliability of client-facing applications.',
   },
   {
     role: 'Teaching Assistant',
@@ -65,16 +65,15 @@ const EXPERIENCES = [
     period: 'Jan 2024 – Jun 2024',
     location: 'Rwanda',
     type: 'Teaching',
-    desc: 'Taught Entrepreneurship to lower secondary school students. Supported learners in developing business thinking and problem-solving skills.',
+    desc: 'Taught Entrepreneurship to lower secondary school students, helping them develop business thinking and problem-solving skills. Delivered engaging lessons aligned with the curriculum and adapted teaching approaches to meet individual learner needs. Supported students in understanding entrepreneurial concepts and applying them to real-world scenarios. Contributed to IEE Rwanda educational initiatives focused on empowering young learners.',
   },
   {
     role: 'Microsoft Power Automate & SharePoint Specialist Intern',
     company: 'M365Connect',
-    company: 'M365Connect',
     period: 'Oct 2024 – Dec 2024',
     location: 'Remote',
     type: 'Internship',
-    desc: 'Assisted in automating workflows using Microsoft Power Automate. Supported SharePoint solutions and digital collaboration systems. Helped improve process efficiency through automation tools.',
+    desc: 'Automated business workflows using Microsoft Power Automate, reducing manual steps and improving process efficiency. Implemented error-handling and failure-management mechanisms in automated workflows to improve reliability. Supported SharePoint solutions and digital collaboration systems, helping streamline document and information management processes. Collaborated on workflow improvements and automation solutions to support more consistent and efficient business operations.',
   },
   {
     role: 'Freelance Developer',
@@ -82,10 +81,10 @@ const EXPERIENCES = [
     period: '2024 – Present',
     location: 'Remote',
     type: 'Freelance',
-    desc: 'Design and build full-stack web applications for clients across various industries. Deliver responsive frontends, robust backend APIs, and complete end-to-end solutions. Manage client communication, project scoping, and delivery independently.',
+    desc: 'Designed and built full-stack web applications for clients across various industries. Delivered responsive frontends, robust backend APIs, and complete end-to-end solutions. Managed client communication, project scoping, and delivery independently.',
   },
 ];
-
+  
 const SOCIAL_LINKS = [
   {
     name: 'GitHub',
@@ -114,7 +113,7 @@ const PROFILE_JSON = {
   role: 'Full-Stack Developer',
   location: 'Available for work',
   yearsOfExperience: 2,
-  projectsCompleted: 12,
+  projectsCompleted: 14,
   passions: ['Clean Code', 'UI Design', 'Problem Solving'],
 };
 
@@ -1126,7 +1125,7 @@ function ProjectCard({ project, index }) {
           <img
             src={project.image}
             alt={project.title}
-            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.4s ease' }}
+            style={{ width: '100%', height: '100%', objectFit: ['AbatCO CycleTrack PWA', 'Browse Kigali', 'Daylight Wellbeing App', 'Daylight Wellbeing — UI/UX Design'].includes(project.title) ? 'contain' : 'cover', display: 'block', transition: 'transform 0.4s ease' }}
           />
         ) : (
           <div style={{
