@@ -683,7 +683,7 @@ function Hero() {
               marginBottom: '32px',
             }}
           >
-            Full-stack developer with 2 years of experience and 12 projects delivered.
+            Full-stack developer with 2 years of experience and 12+ projects delivered.
             Passionate about building clean, performant web apps and turning
             complex problems into intuitive digital experiences.
           </p>
